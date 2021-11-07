@@ -19,7 +19,7 @@ public class taskOne {
 				
 			
 		};
-		
+		// one way getting sum
 		sum=0;
 		for(int num[]:numbers) {
 			for(int num1:num) {
@@ -28,7 +28,17 @@ public class taskOne {
 			
 		} 
 		System.out.println("The integers of all numbers is "+sum);
-
+		System.out.println();
+		
+		// two different way getting result
+		
+		for(int i=0; i<numbers.length; i++) {
+			 for (int j=0; j<numbers[i].length; j++) {
+				 sum+=numbers[i][j];
+				 
+			 }
+		}
+		System.out.println(sum);
 	}
 
 }

@@ -15,6 +15,8 @@ public class taskThree {
 				
 				{34,65,8,46},
 		};
+		
+		// one way get results
 		int evensum=0;
 		int oddsum=0;
 		for(int[] n:num) {
@@ -23,6 +25,20 @@ public class taskThree {
 					evensum+=n1;
 				}else {
 					oddsum+=n1;
+				}
+			}
+		}
+		System.out.println("Sum of all even integer "+evensum);
+		System.out.println("Sum of all odd integer "+oddsum);
+		System.out.println();
+		
+		// second way to get results
+		for(int i=0; i<num.length; i++) {
+			for(int j=0; j<num[i].length; j++) {
+				if(num[i][j]% 2 == 0) {
+					evensum+=num[i][j];
+				}else {
+					oddsum+=num[i][j];
 				}
 			}
 		}

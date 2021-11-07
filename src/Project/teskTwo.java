@@ -17,6 +17,8 @@ public class teskTwo {
 				
 		};
 		
+		// one way to get result
+		
 		for(int [] a:num) {
 			
 			for(int b:a) {
@@ -27,6 +29,16 @@ public class teskTwo {
 				
 			}
 			
+		}
+		 // two way get result
+		System.out.println();
+		for(int i=0; i<num.length; i++) {
+			 for(int j=0; j<num[i].length; j++) {
+				 if(num[i][j]% 2== 0) {
+					 System.out.println(num[i][j]);
+				 }
+				 
+			 }
 		}
 	}
 
