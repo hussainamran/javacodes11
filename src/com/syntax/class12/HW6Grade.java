@@ -1,5 +1,10 @@
 package com.syntax.class12;
 
+/*Create  class Student that will have a method getGrade. Your method should accept
+ *  the score of a student and return a grade:
+ * 
+ */
+
 public class HW6Grade {
 	
 	 char getgrade(int score) {
@@ -22,7 +27,7 @@ public class HW6Grade {
 	 public static void main(String []arg) {
 		 
 		 HW6Grade inp=new HW6Grade();
-		 System.out.println(inp.getgrade(90));
+		 System.out.println(inp.getgrade(9));
 		 
 	 }
 	}

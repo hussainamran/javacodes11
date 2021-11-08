@@ -4,6 +4,10 @@ public class HW3LAnguage {
 
 	void greeting(String country) {
 		
+		/*Create a method that will say Hello in different language based on the country that 
+		 * will passed when method is executed.
+		 * 
+		 */
 		
 		String result=null;
 		switch(country) {
@@ -28,6 +32,8 @@ public class HW3LAnguage {
 		 HW3LAnguage count=new  HW3LAnguage();
 		 
 		 count.greeting("Mexcio");
+		 count.greeting("USA");
+		 count.greeting("France");
 	}
 
 }

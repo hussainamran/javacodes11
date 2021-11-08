@@ -2,30 +2,37 @@ package com.syntax.class12;
 
 public class HW5Prime {
 	
-	void primenumber(int num) {
+	//Write a method to return whether given number is prime or not?
+	
+	// prime number not 0-1 it start from 2
+	
+	boolean isPrime(int number) {
+		boolean isPrime=true;
 		
-		if(num>1) {
-			for(int i=2; i<num; i++) {
+		if(number>1) {
+			for(int i=2; i<number; i++) {
 				
-				if(num% i==0) {
-					System.out.println(num+" It is not a prime number");
-					break;
-				}else {
-					System.out.println(num+" It is a prime number");
+				if(number % i == 0) {
+					isPrime=false;
 					break;
 				}
 			}
 		}else {
-		System.out.println(num+" It is not a prime number");
-		
-	}
+			isPrime=false;
+		}
+		return isPrime;
 	}
 	
-
-	public static void main (String []arg) {
+	public static void main(String []arg) {
 		
 		HW5Prime inp=new HW5Prime();
-		inp.primenumber(10);
+		System.out.println(inp.isPrime(2));
+		
 	}
-
+	
+	
+	
+	
 }
+
+
