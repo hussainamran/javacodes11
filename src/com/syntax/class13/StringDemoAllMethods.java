@@ -41,10 +41,10 @@ public class StringDemoAllMethods {
 		System.out.println(str2.startsWith("This"));
 		System.out.println(str2.startsWith("L"));
 		System.out.println(str2.startsWith("easy"));
-		System.out.println(str2.startsWith("s"));
+		System.out.println(str2.endsWith("s"));// string end with character
 		System.out.println();
 		
-		String name4="This class is eassy";// we use this mathod if string there or not
+		String name4="This class is eassy";// we use this mathod to check if we have the string which we mention in parameter
 		System.out.println(name4.contains("class"));
 		System.out.println(name4.contains("lemon"));
 		System.out.println(name4.contains("i"));
