@@ -7,8 +7,8 @@ public class StringDemo3 {
 
 		// deleting string 
 		String str="AHFynjdnfk45786709#$#jfkj87*&";
-		System.out.println(str.replaceAll("[0-5]", "*"));
-		System.out.println(str.replaceAll("[a-z]", "*"));
+		System.out.println(str.replaceAll("[0-5]", "*"));//print after 5 from anynumber
+		System.out.println(str.replaceAll("[a-z]", "*"));// do not print anything start with smaller a-z
 		System.out.println(str.replaceAll("[A-Z]", "*"));
 		System.out.println(str.replaceAll("[A-Za-z]", "*"));
 		System.out.println(str.replaceAll("[^a-zA-Z0-9]", "*"));// removing all simbul
