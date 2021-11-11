@@ -10,8 +10,16 @@ public class hWTesk1 {
 		 */
 		
 		String str="Today is Wednesday and we have java class";
-
+		
+		//string class we use when we don't chane a content of a veriable
 		System.out.println(str.replace(" ",""));
+		System.out.println(str);
+		System.out.println();
+		
+		//string builder we use when we want to change content of value again and again
+		StringBuilder str2=new StringBuilder("me: look it's not you)");
+		System.out.println(str2.reverse());
+		System.out.println(str2);
 
 	}
 
