@@ -8,18 +8,19 @@ public class Task8 {
 		 * 0 1 1 2 3 5 8 13 21 34....
 		 */
 		
-		int perviousNumber=0;
-		int currentNumbers=1;
+		int previousNumber=0;
+		int currentNumber=1;
 		int sum=0;
-		int numbersToPrints=10;
-		
-		System.out.println(perviousNumber+" ");
-		System.out.println(currentNumbers+" ");
-		
-		for(int i=0; i<numbersToPrints-2; i++) {
-			sum=currentNumbers+perviousNumber;
-		}
+		int numbersToPrint=10;
+		System.out.print(previousNumber+" ");
+		System.out.print(currentNumber+" ");
+		for(int i=0;i<numbersToPrint-2;i++) {
+			sum=currentNumber+previousNumber;
+			System.out.print(sum+" ");
+			previousNumber=currentNumber;
+			currentNumber=sum;
 
 	}
 
 }
+	}
